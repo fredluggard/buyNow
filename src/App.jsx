@@ -1,12 +1,13 @@
-import { StoreProvider } from "./store/StoreProvider"
-import "./styles/App.scss"
+import Navbar from "./components/NavBar/Navbar";
+import { StoreProvider } from "./store/StoreProvider";
+import "./styles/App.scss";
 
 function App() {
-	return (
-		<StoreProvider>
-			<h1>Hello Fred</h1>
-		</StoreProvider>
-	)
+  return (
+    <StoreProvider>
+      <Navbar />
+    </StoreProvider>
+  );
 }
 
-export default App
+export default App;
