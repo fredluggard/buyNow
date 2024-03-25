@@ -3,7 +3,7 @@ import { IoIosSearch, IoIosArrowDown, IoIosHeartEmpty } from "react-icons/io";
 import { PiBagLight } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
-function UpperNavbar() {
+function UpperNavbar({ size }) {
   return (
     <div className="shadow-lg bg-white">
       {/* Main container */}
@@ -57,6 +57,9 @@ function UpperNavbar() {
             <li>
               <Link className="flex items-center" to="/cart">
                 <PiBagLight className="mr-1" /> CART
+                <span className="text-white text-sm bg-red-500 rounded-full px-2">
+                  {size}
+                </span>
               </Link>
             </li>
           </ul>

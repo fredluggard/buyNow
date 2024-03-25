@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Featured_Products from "./components/FeaturedProducts/Featured_Products";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/HeroPage/Hero";
@@ -11,6 +12,7 @@ import { StoreProvider } from "./store/StoreProvider";
 import "./styles/App.scss";
 
 function App() {
+  const [show, setShow] = useState(true);
   return (
     <StoreProvider>
       <Navbar />
